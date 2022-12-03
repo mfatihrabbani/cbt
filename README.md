@@ -121,7 +121,24 @@ Response:
         "gradeExam": "int",
         "majorExam": "string",
         "question": {
-            
+            [
+                {
+                    "nameQuestion": "string",
+                    "A": "?string",
+                    "B": "?string",
+                    "C": "?string",
+                    "D": "?string",
+                    "answer": "char",
+                },
+                {
+                    "nameQuestion": "string",
+                    "A": "?string",
+                    "B": "?string",
+                    "C": "?string",
+                    "D": "?string",
+                    "answer": "char",
+                }
+    ]
         }
     }
 }
@@ -134,7 +151,7 @@ Response:
 
 Request :
 - Method : POST
-- Endpoint : "/api/question"
+- Endpoint : "/api/question/:idExam"
 - Headers : 
     - Content-Type : application/json
     - Accept : application/json
@@ -164,42 +181,6 @@ Request :
     
 }
 ```
-
-Response: 
-```json
-{
-    "code": "number",
-    "status": "string",
-    "data": {
-        "question": [
-        {
-            "nameQuestion": "string",
-            "A": "?string",
-            "B": "?string",
-            "C": "?string",
-            "D": "?string",
-            "answer": "char",
-        },
-        {
-            "nameQuestion": "string",
-            "A": "?string",
-            "B": "?string",
-            "C": "?string",
-            "D": "?string",
-            "answer": "char",
-        }
-    ]
-    }
-}
-```
-
-#### GET Soal Ujian
-
-Request :
-- Method : GET
-- Endpoint : "/api/question"
-- Headers :
-    - Accept : application/json
 
 Response: 
 ```json
