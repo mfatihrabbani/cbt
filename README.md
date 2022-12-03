@@ -126,3 +126,105 @@ Response:
     }
 }
 ```
+
+
+### Soal Ujian
+
+#### POST Soal Ujin
+
+Request :
+- Method : POST
+- Endpoint : "/api/question"
+- Headers : 
+    - Content-Type : application/json
+    - Accept : application/json
+
+- Body :
+
+```json
+{
+    "question": [
+        {
+            "nameQuestion": "string",
+            "A": "?string",
+            "B": "?string",
+            "C": "?string",
+            "D": "?string",
+            "answer": "char",
+        },
+        {
+            "nameQuestion": "string",
+            "A": "?string",
+            "B": "?string",
+            "C": "?string",
+            "D": "?string",
+            "answer": "char",
+        }
+    ]
+    
+}
+```
+
+Response: 
+```json
+{
+    "code": "number",
+    "status": "string",
+    "data": {
+        "question": [
+        {
+            "nameQuestion": "string",
+            "A": "?string",
+            "B": "?string",
+            "C": "?string",
+            "D": "?string",
+            "answer": "char",
+        },
+        {
+            "nameQuestion": "string",
+            "A": "?string",
+            "B": "?string",
+            "C": "?string",
+            "D": "?string",
+            "answer": "char",
+        }
+    ]
+    }
+}
+```
+
+#### GET Soal Ujian
+
+Request :
+- Method : GET
+- Endpoint : "/api/question"
+- Headers :
+    - Accept : application/json
+
+Response: 
+```json
+{
+    "code": "number",
+    "status": "string",
+    "data": {
+        "question": [
+        {
+            "nameQuestion": "string",
+            "A": "?string",
+            "B": "?string",
+            "C": "?string",
+            "D": "?string",
+            "answer": "char",
+        },
+        {
+            "nameQuestion": "string",
+            "A": "?string",
+            "B": "?string",
+            "C": "?string",
+            "D": "?string",
+            "answer": "char",
+        }
+    ]
+    }
+}
+```
