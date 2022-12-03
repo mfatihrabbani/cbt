@@ -128,7 +128,6 @@ Response:
                     "B": "?string",
                     "C": "?string",
                     "D": "?string",
-                    "answer": "char",
                 },
                 {
                     "nameQuestion": "string",
@@ -136,9 +135,8 @@ Response:
                     "B": "?string",
                     "C": "?string",
                     "D": "?string",
-                    "answer": "char",
                 }
-    ]
+             ]
         }
     }
 }
