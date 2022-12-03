@@ -1,3 +1,7 @@
+## Skema Database
+Skema database aplikasi 
+
+https://drawsql.app/teams/my-team-331/diagrams/cbt
 
 ## Spesifikasi Api
 
